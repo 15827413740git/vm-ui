@@ -6,7 +6,13 @@ import router from './router'
 import { baseUrl } from './config/env'
 import {Confirm, Alert, Toast, Notify, Loading} from './components/dialog';
 import { Scroll } from './components/Scroll';
+import {Slider, SliderItem} from './components/slider'
+
 Vue.component(Scroll.name, Scroll);
+
+Vue.component(Slider.name, Slider);
+Vue.component(SliderItem.name, SliderItem);
+console.log(Slider);
 Vue.config.productionTip = false
 Vue.prototype.$dialog = {
         confirm: Confirm,
