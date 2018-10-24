@@ -1,33 +1,33 @@
 <template>
-	<div>
+  <div>
 
-		<button @click="alert">alert</button>
-		<button @click="confirm">confirm</button>
-		<button @click="toast">toast</button>
+    <button @click="alert">alert</button>
+    <button @click="confirm">confirm</button>
+    <button @click="toast">toast</button>
 
-		<button @click="loading">loading</button>
-		<button @click="notify">notify</button>
-		<!--<scroll
+    <button @click="loading">loading</button>
+    <button @click="notify">notify</button>
+    <!--<scroll
 			:on-refresh="onRefresh"
             :on-infinite="onInfinite"
 			>
 			<p v-for="item in items">1111111111111</p>
 		</scroll>-->
-		<div>
-			<vm-slider :loop="false">
-				<vm-slider-item><a href="http://www.ydcss.com">
-						<img src="http://static.ydcss.com/uploads/ydui/1.jpg">
-					</a></vm-slider-item>
-				<vm-slider-item><a href="http://www.ydcss.com">
-						<img src="http://static.ydcss.com/uploads/ydui/2.jpg">
-					</a></vm-slider-item>
-				<vm-slider-item><a href="http://www.ydcss.com">
-						<img src="http://static.ydcss.com/uploads/ydui/3.jpg">
-					</a></vm-slider-item>
-			</vm-slider>
-		</div>
+    <div>
+      <vm-slider :loop="false" :autoplay="2000">
+        <vm-slider-item>
+          <img src="http://static.ydcss.com/uploads/ydui/1.jpg">
+        </vm-slider-item>
+        <vm-slider-item>
+          <img src="http://static.ydcss.com/uploads/ydui/2.jpg">
+        </vm-slider-item>
+        <vm-slider-item>
+          <img src="http://static.ydcss.com/uploads/ydui/3.jpg">
+        </vm-slider-item>
+      </vm-slider>
+    </div>
 
-	</div>
+  </div>
 </template>
 
 <script>
