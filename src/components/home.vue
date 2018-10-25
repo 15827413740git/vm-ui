@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
 	<div>
 		
 		<vm-button type="warning" :showLoading="true" @click.native="alert">alert</vm-button>
@@ -8,7 +7,6 @@
 		<vm-button type="danger"  @click.native="loading">loading</vm-button>
 		<vm-button type="royal" @click.native="notify">notify</vm-button>
 		<!--<scroll
-=======
   <div>
 
     <button @click="alert">alert</button>
@@ -24,7 +22,6 @@
 			>
 			<p v-for="item in items">1111111111111</p>
 		</scroll>-->
-    <div>
       <vm-slider :loop="false" :autoplay="2000">
         <vm-slider-item>
           <img src="http://static.ydcss.com/uploads/ydui/1.jpg">
@@ -36,7 +33,6 @@
           <img src="http://static.ydcss.com/uploads/ydui/3.jpg">
         </vm-slider-item>
       </vm-slider>
-    </div>
 
   </div>
 </template>
