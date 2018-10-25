@@ -12,8 +12,9 @@ const Toast = (options = {}) => {
     options.icon?instance.icon = options.icon:'';
     options.timeout?instance.timeout = ~~options.timeout:'';
     options.callback?instance.callback = options.callback:'';
-    document.body.appendChild(instance.$el);
     instance.showToast()
+    document.body.appendChild(instance.$el);
+    
 };
 
 export default Toast;

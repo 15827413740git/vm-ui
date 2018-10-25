@@ -1,12 +1,11 @@
 <template>
 	<div>
 		
-		<button @click="alert">alert</button>
-		<button @click="confirm">confirm</button>
-		<button @click="toast">toast</button>
-		
-		<button @click="loading">loading</button>
-		<button @click="notify">notify</button>
+		<vm-button type="warning" :showLoading="true" @click.native="alert">alert</vm-button>
+		<vm-button type="primary" @click.native="confirm">confirm</vm-button>
+		<vm-button type="success" @click.native="toast">toast</vm-button>
+		<vm-button type="danger"  @click.native="loading">loading</vm-button>
+		<vm-button type="royal" @click.native="notify">notify</vm-button>
 		<!--<scroll
 			:on-refresh="onRefresh"
             :on-infinite="onInfinite"

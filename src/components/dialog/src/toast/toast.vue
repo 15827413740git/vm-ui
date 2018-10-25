@@ -45,7 +45,13 @@
                 }, this.timeout + 100);
             },
             closeToast() {
+            	this.activeClass = 'leave-active';
+            	const timer = setTimeout(() => {
+            	clearTimeout(timer);
                 this.$el.parentNode && this.$el.parentNode.removeChild(this.$el);
+                this.activeClass = '';
+                },250);
+                
             }
         }
     }
